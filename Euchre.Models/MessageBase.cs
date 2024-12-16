@@ -7,8 +7,8 @@ public class MessageBase : BaseModel, IMessageBase
     public string Type { get; set; } = String.Empty;
     public string RoomCode { get; set; } = String.Empty;
     public string Description { get; set; } = String.Empty;
-    public MessageSender Sender { get; set; }
-    public enum MessageSender
+    public Senders Sender { get; set; }
+    public enum Senders
     {
         Server,
         Client
