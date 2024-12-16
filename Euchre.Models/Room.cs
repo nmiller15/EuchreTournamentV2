@@ -9,6 +9,7 @@ public class Room : BaseModel, IRoom
     public Round CurrentRound { get; set; }
     public Dictionary<Guid, User> Users { get; set; }
     public Dictionary<string, Result> Results { get; set; } = new Dictionary<string, Result>();
+    public List<ScoreEntry> ScoreEntries = [];
     
     
     public enum RoomStatus
